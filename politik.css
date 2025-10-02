@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0b0b0b;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Header */
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f2f2f2;
+  border-bottom: 4px solid #0e1a5e;
+  padding: 8px 12px;
+  min-height: 60px;
+}
+
+.logo-img {
+  height: 44px;
+  width: auto;
+}
+
+/* Topnav */
+.topnav {
+  display: flex;
+  width: 420px;
+  justify-content: space-between;
+}
+.topnav a {
+  color: #0b0b0b;
+  text-decoration: none;
+  padding: 15px 10px;
+  font-weight: bold;
+}
+.topnav a:hover {
+  background: #ddd;
+  color: #333;
+}
+
+/* Burger-ikon skjult på desktop */
+.icon {
+  display: none;
+}
+
+.container {
+  flex: 1;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+article {
+  max-width: 750px;
+}
+article h1 {
+  color: #0e1a5e;
+  margin: 8px 0;
+}
+article h3 {
+  color: #0e1a5e;
+  margin-bottom: 8px;
+}
+article p {
+  margin-top: 8px;
+}
+.news {
+  margin-top: 14px;
+}
+
+/* Desktop */
+@media screen and (min-width: 900px) {
+  .front {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  .hero-img {
+    width: 340px;
+    margin: 0;
+  }
+  .content {
+    flex: 1;
+    margin: 0;
+  }
+  .sidebar {
+    width: 260px;
+    background: #f4f4f4;
+    padding: 10px;
+  }
+  .list {
+    list-style: none;
+    margin-top: 8px;
+  }
+  .list li {
+    margin-bottom: 6px;
+  }
+}
+
+/* Footer */
+footer {
+  background: #f2f2f2;
+  border-top: 4px solid #0e1a5e;
+  padding: 16px;
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+  color: #0b0b0b;
+  margin: 0 10px;
+  font-weight: bold;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Mobil */
+@media screen and (max-width: 670px) {
+  .logo {
+    position: static;
+  }
+  .logo-img {
+    height: 40px;
+  }
+  .topnav {
+    width: auto;
+    margin-left: auto;
+  }
+  .topnav a {
+    display: none;
+  }
+  .topnav .icon {
+    display: inline-block;
+    position: static;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    background: #eee;
+    color: #333;
+  }
+
+  .responsive {
+    display: block;
+    width: 100%;
+    margin-top: 8px;
+  }
+  .responsive a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    border-top: 1px solid #e5e5e5;
+  }
+}

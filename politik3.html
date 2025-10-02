@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nyheder Michael Rask</title>
+
+    <link rel="stylesheet" href="politik.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="politik1.html">
+          <img src="lalogo.png" alt="Logo" class="logo-img" />
+        </a>
+      </div>
+
+      <div class="topnav" id="myTopnav">
+        <a href="politik1.html">Forside</a>
+        <a href="politik3.html">Nyheder</a>
+        <a href="#">Kommunalvalg 2025</a>
+        <a href="politik2.html">Kontakt</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
+
+    <div class="container">
+      <img src="nyheder.jpg" alt="Nyheder" class="page-img" />
+
+      <article>
+        <h1>Nyheder</h1>
+
+        <section class="news">
+          <h3>Kommunalvalg 2025</h3>
+          <p>
+            1. oktober 2025 Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Integer mollis bibendum volutpat. Pellentesque habitant morbi
+            tristique senectus et netus et malesuada fames ac turpis egestas.
+          </p>
+        </section>
+
+        <section class="news">
+          <h3>Events i kommunen</h3>
+          <p>
+            25. september 2025 Vivamus efficitur, massa a accumsan consequat,
+            augue neque congue leo, vitae tempus sem dolor ut velit. Sed
+            porttitor lectus mi, vitae luctus urna tempor non.
+          </p>
+        </section>
+
+        <section class="news">
+          <h3>Bedre service i kommunen</h3>
+          <p>
+            15. september 2025 Curabitur id ante ac orci varius commodo. Cras
+            ultrices, leo nec bibendum malesuada, ipsum nibh tincidunt mi, vitae
+            condimentum arcu velit id lacus.
+          </p>
+        </section>
+      </article>
+    </div>
+
+    <footer>
+      <a href="#">Partiet</a>
+      <a href="#">Medlemmer</a>
+      <a href="#">Events</a>
+      <a href="#">Om os</a>
+    </footer>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+</html>
